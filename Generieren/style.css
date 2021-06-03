@@ -1,0 +1,18 @@
+
+#body, #erg
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#inp, button
+{
+    width: 300px;
+    height: 35px;
+    font-size: 25px;
+}
+span{
+    font-size: 25px;
+}
