@@ -1,0 +1,9 @@
+
+body{height: 100vh;}
+
+.box1
+{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
