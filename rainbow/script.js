@@ -10,25 +10,33 @@
 //    }, 2000);
 
 
-setInterval(total,1000)
+var myTime=setInterval(total,1000)
+
+var zeit=5;
+
 
 function total ()
 {
     for (i=90; i>=10; i-=10)
     {
      
-     divCreat(i)
+     divCreat()
      
     
     }
     
     for (i=10;i<=90;i+=10)
     {
-        divCreat(i)
+        divCreat()
         
     }
     
-
+    zeit--;
+    if(zeit==0)
+    {
+        clearInterval(myTime);
+        setInterval(total,1000)
+    }
     
 }
 
@@ -43,12 +51,12 @@ function divCreat()
     div.classList.add("box1");
     div.style.height=i+"%";
     div.style.backgroundColor='rgb('+farbe(0,255)+','+farbe(0,255)+','+farbe(0,255)+')';
-    
+    body();
 
     
 }
 
-function baby()
+function body()
 {
     var body=document.getElementById("body");
     body.style.backgroundColor='rgb('+farbe(0,255)+','+farbe(0,255)+','+farbe(0,255)+')';
