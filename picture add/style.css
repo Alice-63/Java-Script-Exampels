@@ -50,6 +50,15 @@ main
     background-image: url();
     background-size: cover;
     background-color: #f5e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container span
+{
+    display: none;
+    font-size: 1.2em;
 }
 
 .inputBereich
