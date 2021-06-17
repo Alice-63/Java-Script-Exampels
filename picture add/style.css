@@ -7,6 +7,7 @@ body{
     justify-content: center;
     align-items: flex-start;
     padding-top: 60px;
+    background-color: #f7a841;
 }
 
 aside
@@ -20,6 +21,7 @@ aside
     align-content: center;
     padding: 15px;
     overflow:overlay;
+    background-color: #e6e6e6;
 
     
 }
@@ -47,6 +49,7 @@ main
     border: 1px solid #ccc;
     background-image: url();
     background-size: cover;
+    background-color: #f5e6e6;
 }
 
 .inputBereich
