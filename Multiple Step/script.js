@@ -22,9 +22,8 @@ function nav(n)
 
   
  
-  buttonUpdate(n)
-
-  progressUpdate()
+  buttonUpdate()
+  progressUpdate(n)
   kreisUpdate(letzter)
 }
 
@@ -33,7 +32,7 @@ function schrittCheck(n)
   if (aktuel == forms.length - 1 && n == 1) {
 
     senden();
-    return
+    return true ;
 
   }
 
