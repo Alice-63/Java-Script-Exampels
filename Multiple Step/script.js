@@ -2,7 +2,7 @@ var aktuel = 0;
 var forms = document.getElementsByClassName("form");
 var progress = document.getElementById("progressfill");
 var kreis = document.getElementById("schritte").getElementsByTagName("div");
-
+var alleInput= document.getElementsByTagName("input");
 
 
 
@@ -12,9 +12,9 @@ function nav(n)
   var letzter = aktuel
   
   if(schrittCheck(n))
-
+{
   return;
-
+}
 
   forms[aktuel].style.display = "none";
   aktuel += n;
@@ -61,11 +61,13 @@ function buttonUpdate(n)
 
 function senden()
 {
-  for( var i=0; i<arr.length;i++)
+  for( var i=0; i<alleInput.length;i++)
   {
-    if(element.value=="")
+    if(alleInput[i].value=="")
     {
-      return
+      alert("Bitte ausfüllen");
+  
+      return;
     }
   }
  
