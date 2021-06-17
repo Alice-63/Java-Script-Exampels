@@ -1,0 +1,108 @@
+*{box-sizing: border-box;}
+
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container
+{
+    width: 500px;
+    padding: 25px;
+    border: 1px solid #ccc;
+    position: relative;;
+}
+.form
+{
+    display: none;
+    flex-direction: column;
+
+}
+.form span
+{
+    font-size: 0.9em;
+    margin-bottom: 12px;
+
+}
+
+.form input
+{
+ margin-bottom: 8px;
+ outline: none;
+ padding: 5px 8px;
+}
+.container h2
+{
+ margin-top:0;
+}
+
+.buttons
+{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button
+{
+    outline: none;
+    border: none;
+    padding: 12px 25px;
+    color :white;
+    background-color: darkorange;
+    font-weight: bold;
+    cursor: pointer;;
+}
+#schritt
+{
+    text-align: center;
+    font-size: 0.7em;
+    color: gray;
+    display: block;
+}
+#zureuck
+{
+    opacity: 0;
+}
+#progress{
+    height: 20px;
+    width: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#progressfill
+{
+    height: 8px;
+    width: 5%;
+    background-color: darkorange;
+}
+#schritte 
+{
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+    margin: 0 auto;
+}
+
+#schritte div
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f5d395;
+    
+}
+#schritte div:first-child
+{
+    background-color: darkorange;
+}
+
+#gesendet
+{
+    display: none;
+    text-align: center;
+}

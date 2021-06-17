@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+
+    <div class="container">
+        <div id="progress">
+            <div id="progressfill"></div>
+        </div>
+        <h2>Konto erstellen</h2>
+        <div class="form" style="display: flex;">
+        <span>Persöncliche Daten</span>
+        <input type="text" placeholder="Vorname">
+        <input type="text" placeholder="Nachname">
+        
+        </div>
+        <div class="form">
+            <span>Fahrzeugdaten</span>
+        <input type="text" placeholder="E-Mail">
+        <input type="text" placeholder="Tellefonnummer">
+        </div>
+        <div class="form">
+            <span>Persöncliche Daten</span>
+            <input type="text" placeholder="Marke">
+            <input type="text" placeholder="Model">
+            <input type="text" placeholder="Baujahr">
+            <input type="text" placeholder="KM-Stand">
+        </div>
+        <div class="form">
+            <span>Fahrzeugdaten</span>
+            <input type="text" placeholder="Anzahl der Vorbesitzer">
+            <input type="text" placeholder="Nächste TÜV">
+            <input type="text" placeholder="Ausstatung">
+            <input type="text" placeholder="Schaden"></div>
+
+            <span id="gesendet">ERFOGLREICH GESENDET</span>
+
+            <div id="schritte">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="buttons">
+        <button onclick="nav (-1)" id="zureuck">Zurück</button>
+        <button onclick="nav (1)" id="weiter">Weiter</button>
+    </div>
+    </div>
+   
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
