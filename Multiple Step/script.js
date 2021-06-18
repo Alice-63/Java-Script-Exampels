@@ -104,7 +104,7 @@ function progressUpdate() {
     var prz=100/forms.length;
     var c=prz*i;
 
-  console.log(getComputedStyle(progress, "width"));
+  
   progress.style.width=c+"%";
 
 }
