@@ -95,21 +95,9 @@ function senden()
 
 
 function progressUpdate() {
-  // if (aktuel == 1) { progress.style.width = "25%" }
-  // else if (aktuel == 2) { progress.style.width = "50%" }
-  // else if (aktuel == 3) { progress.style.width = "75%" }
-  
-  for(i=1;i<aktuel;i++)
-  {
-    var prz=100/forms.length;
-    var c=prz*i;
-
-  console.log(getComputedStyle(progress, "width"));
-  progress.style.width=c+"%";
-
-}
-
-
+  if (aktuel == 1) { progress.style.width = "25%" }
+  else if (aktuel == 2) { progress.style.width = "50%" }
+  else if (aktuel == 3) { progress.style.width = "75%" }
 }
 
 function kreisUpdate(vorher) 
@@ -119,3 +107,6 @@ function kreisUpdate(vorher)
 
 }
 
+var x=getComputedStyle(progress);
+
+console.log(x);
