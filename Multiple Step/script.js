@@ -99,7 +99,7 @@ function progressUpdate() {
   // else if (aktuel == 2) { progress.style.width = "50%" }
   // else if (aktuel == 3) { progress.style.width = "75%" }
   
-  for(i=1;i<aktuel;i++)
+  for(i=0;i<aktuel+1;i++)
   {
     var prz=100/forms.length;
     var c=prz*i;

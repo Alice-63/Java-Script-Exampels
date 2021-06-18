@@ -77,7 +77,7 @@ body{
 #progressfill
 {
     height: 8px;
-    width:1% ;
+    width:0 ;
     background-color: darkorange;
 }
 #schritte 
