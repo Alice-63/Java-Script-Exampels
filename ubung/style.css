@@ -1,0 +1,38 @@
+*{box-sizing: border-box;}
+body{width: 1000px;display: flex;}
+
+
+aside
+{
+ width: 30%;
+ height:700px;
+ border: 1px solid black;
+ margin-right: 25px;
+ padding: 25px;
+}
+main
+{
+    width: 60%;
+    height: 700px;
+    border: 1px solid black;
+    padding: 50px;
+
+}
+.altBox
+{
+    display: flex;
+}
+.box
+{
+    
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+   
+    margin-right: 10px;
+}
+.box i
+{
+    font-size: 50px;
+   
