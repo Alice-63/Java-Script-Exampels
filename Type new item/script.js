@@ -31,7 +31,7 @@ else
     console.log(number)
     }
 }
-function add2(a)
+function add2()
 {
     
 }
