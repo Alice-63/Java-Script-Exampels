@@ -18,20 +18,28 @@ function add()
 else
     {
     
-        var number=Math.floor(Math.random()*1000000)
+    var number=Math.floor(Math.random()*1000000)
+    var div=document.createElement("div");
+    div.className="box"
+    var i=document.createElement("i");
+    i.className="fas fa-times";
+    i.onclick=function(){rem()}
     var h2=document.createElement("h2");
     h2.className="h2";
-    h2.appendChild(document.createTextNode(input))
-    erg.appendChild(h2);
+    h2.appendChild(document.createTextNode(input));
+    div.appendChild(h2);
+    div.appendChild(i);
+    erg.appendChild(div);
     h2.style.backgroundColor="#"+number;
     h2.style.color="#"+(number+511111);
     document.getElementById("inp").value="";
     zahl++;
-    add2 (zahl);
-    console.log(number)
+    
+  
     }
 }
-function add2()
+function rem()
 {
-    
+    var div=document.querySelector(".box");
+    div.remove();
 }
