@@ -40,6 +40,15 @@ else
 }
 function rem()
 {
+    if(confirm("Are you sure?"))
+    {
     var div=document.querySelector(".box");
-    div.remove();
+    div.remove();}
+}
+
+function del()
+{
+
+    if(confirm("Are you sure?"))
+    {erg.innerHTML="";}
 }
