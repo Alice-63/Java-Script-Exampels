@@ -1,0 +1,93 @@
+*{box-sizing: border-box;}
+body{display: flex;
+    justify-content: center;
+    align-content: center;
+flex-direction: column;}
+.inputs
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input, button
+{
+    width: 230px;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 2px solid #ccc;
+}
+button
+{
+    background-color: darkorange;
+    cursor: pointer;
+}
+.preis
+{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.preis input
+{
+    width: 207px;
+}
+.preis i{
+    border:2px solid #ccc;
+    padding: 4px 5px;
+    margin-bottom: 10px;
+    
+    border-radius:0 5px 5px 0;
+    background-color: darkorange;
+}
+.tabelle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  
+}
+.titel
+{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding-right:25px ;
+   
+}
+.titel span:nth-last-child(2)
+{
+    padding-right: 30px;
+}
+.linie
+{
+    width: 450px;
+    height: 2px;
+    background-color: darkorange;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+
+.liste
+{
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+}
+.liste>div
+{
+    display: flex;
+    flex-direction: column;
+}
+.liste>div:last-child
+{
+   padding-left: 25px;
+}
