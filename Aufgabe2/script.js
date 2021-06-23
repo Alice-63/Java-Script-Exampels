@@ -3,18 +3,22 @@ var body=document.getElementById("body");
 
 
 
-var i=0
 
 
-function geht()
+
+function geht(i)
 {
     
     body.style.backgroundImage="url("+bild[i]+")"
     
-    i++;
+    
     if(i==bild.length-1)
     {
-        i=1
+        i=0
+    }
+    else if(i<0)
+    {
+        i=bild.length-1
     }
     
 }
