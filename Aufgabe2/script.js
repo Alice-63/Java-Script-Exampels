@@ -2,28 +2,30 @@ var bild=["1.png","2.png","3.png","4.png"];
 var body=document.getElementById("body");
 
 
+var n=0;
 
 
 
-
-function geht(i)
+function weiter()
 {
-    
-    body.style.backgroundImage="url("+bild[i]+")"
-    
-    
-    if(i==bild.length-1)
+    n++;
+    body.style.backgroundImage="url("+bild[n]+")"
+
+    if(n==bild.length-1)
     {
-        i=0
+        n=0;
     }
-    else if(i<0)
-    {
-        i=bild.length-1
-    }
-    
+
+    console.log(n)
 }
 
-
-
-
-
+function zueruck()
+{
+    n--;
+    body.style.backgroundImage="url("+bild[n]+")"
+    if(n<0)
+    {
+        n=bild.length-1;
+    }
+    console.log(n)
+}
