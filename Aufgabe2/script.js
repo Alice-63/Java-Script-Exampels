@@ -9,23 +9,26 @@ var n=0;
 function weiter()
 {
     n++;
-    body.style.backgroundImage="url("+bild[n]+")"
+   
 
-    if(n==bild.length-1)
+    if(n>=bild.length)
     {
         n=0;
     }
+    body.style.backgroundImage="url("+bild[n]+")"
 
-    console.log(n)
+    
 }
 
 function zueruck()
 {
     n--;
-    body.style.backgroundImage="url("+bild[n]+")"
+    
+    
     if(n<0)
     {
         n=bild.length-1;
     }
-    console.log(n)
+    body.style.backgroundImage="url("+bild[n]+")"
+ 
 }
