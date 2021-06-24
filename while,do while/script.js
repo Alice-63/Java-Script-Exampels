@@ -2,17 +2,17 @@ var guenstig = document.getElementById("guenstig");
 var fair = document.getElementById("fair");
 var teuer = document.getElementById("teuer");
 var titel=document.getElementById("titel");
-// var liste=document.getElementById("liste");
-// var titelKinder=titel.getElementsByTagName("span");
-// var listeKinder=liste.getElementsByTagName("div");
+var liste=document.getElementById("liste");
+var titelKinder=titel.getElementsByTagName("span");
+var listeKinder=liste.getElementsByTagName("div");
 
-// var prozent=100/titelKinder.length;
+var prozent=100/titelKinder.length;
 
-// for(i = 0; i < titelKinder.length; i++)
-// {
-//     titelKinder[i].style.width=prozent+"%";
-//     listeKinder[i].style.width=prozent+"%";
-// }
+for(i = 0; i < titelKinder.length; i++)
+{
+    titelKinder[i].style.width=prozent+"%";
+    listeKinder[i].style.width=prozent+"%";
+}
 
 var zahl1=1;
 var zahl2=1;
