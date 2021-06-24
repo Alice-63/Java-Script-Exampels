@@ -60,13 +60,25 @@ align-items: center;
     justify-content: space-between;
     align-items: center;
     margin-top: 25px;
-    padding-right:25px ;
+
    
 }
-.titel span:nth-last-child(2)
+.title>*
 {
-    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
+
+.title>*:first-child
+{
+    text-align: left;
+}
+.title>*:last-child
+{
+  text-align: right;
+}
+
 .linie
 {
     width: 450px;
@@ -82,12 +94,18 @@ align-items: center;
     justify-content: space-between;
     width: 450px;
 }
-.liste>div
+.liste>*
 {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
-.liste>div:last-child
+
+.liste>*:first-child
 {
-   padding-left: 25px;
+    text-align: left;
+}
+.liste>*:last-child
+{
+  text-align: right;
 }
