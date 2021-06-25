@@ -89,7 +89,7 @@ function bInput()
 }
 function betragInput()
 {
-    if( inputBetrag.value=="" && /^[-+]?[0-9]+$/.test(inputBetrag.value)==false)
+    if( inputBetrag.value=="" || /^[-+]?[0-9]+$/.test(inputBetrag.value)==false)
     {
         inputBetrag.style.border="1px solid red";
     }
