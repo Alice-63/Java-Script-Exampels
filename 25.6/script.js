@@ -1,11 +1,9 @@
-var inputBesch=document.getElementById("b_input");
-var inputBetrag=document.getElementById("betragInput");
-var liste=document.getElementById("liste");
+var inputBesch = document.getElementById("b_input");
+var inputBetrag = document.getElementById("betragInput");
+var liste = document.getElementById("liste");
 
-function add()
-{
-    if(inputCheck()==false)
-    {
+function add() {
+    if (inputCheck() == false) {
         return
     }
 
@@ -15,25 +13,21 @@ function add()
 }
 
 
-function inputCheck()
-{
-    if(inputBesch.value=="")
-    {
-        inputBesch.style.border="1px solid red";
+function inputCheck() {
+    if (inputBesch.value == "") {
+        inputBesch.style.border = "1px solid red";
         return false;
     }
-    else if(inputBetrag.value=="")
-    {
-        inputBetrag.style.border="1px solid red";
-        inputBetrag.style.borderRight="none";
-     
+    else if (inputBetrag.value == "") {
+        inputBetrag.style.border = "1px solid red";
+        inputBetrag.style.borderRight = "none";
+
         return false;
     }
-    else if(/^[-+]?[0-9]+$/.test(inputBetrag.value)==false)
-    {
-        inputBetrag.style.border="1px solid red";
-        inputBetrag.style.borderRight="none";
-       
+    else if (/^[-+]?[0-9]+$/.test(inputBetrag.value) == false) {
+        inputBetrag.style.border = "1px solid red";
+        inputBetrag.style.borderRight = "none";
+
         return false
     }
     return true;
@@ -41,23 +35,21 @@ function inputCheck()
 }
 
 
-function transactionAdd()
-{
-    var divContainer=document.createElement("div");
-    var spanFirst=document.createElement("span");
-    var divBesch=document.createElement("div");
-    var spanLast=document.createElement("span");
-    spanFirst.innerHTML="+";
-    spanLast.innerHTML= inputBetrag.value+" €";
-    divBesch.innerHTML=inputBesch.value;
+function transactionAdd() {
+    var divContainer = document.createElement("div");
+    var spanFirst = document.createElement("span");
+    var divBesch = document.createElement("div");
+    var spanLast = document.createElement("span");
+    spanFirst.innerHTML = "+";
+    spanLast.innerHTML = inputBetrag.value + " €";
+    divBesch.innerHTML = inputBesch.value;
 
-    var betragZahl=parseInt(inputBetrag.value);
+    var betragZahl = parseInt(inputBetrag.value);
 
-    if(betragZahl<0)
-    {
-        spanFirst.innerHTML="-";
-        spanFirst.style.backgroundColor="var(--minus)";
-        spanLast.style.backgroundColor="var(--minus)";
+    if (betragZahl < 0) {
+        spanFirst.innerHTML = "-";
+        spanFirst.style.backgroundColor = "var(--minus)";
+        spanLast.style.backgroundColor = "var(--minus)";
     }
     divContainer.appendChild(spanFirst);
     divContainer.appendChild(divBesch);
@@ -67,34 +59,27 @@ function transactionAdd()
 
 }
 
-function clear()
-{
-    inputBesch.value="";
-    inputBetrag.value="";
+function clear() {
+    inputBesch.value = "";
+    inputBetrag.value = "";
 
-    inputBesch.style.border="none";
-    inputBetrag.style.border="none";
+    inputBesch.style.border = "none";
+    inputBetrag.style.border = "none";
 }
 
-function bInput()
-{
-    if( inputBesch.value=="")
-    {
-        inputBesch.style.border="1px solid red";
+function bInput() {
+    if (inputBesch.value == "") {
+        inputBesch.style.border = "1px solid red";
     }
-    else
-    {
-        inputBesch.style.border="1px solid green"
+    else {
+        inputBesch.style.border = "1px solid green"
     }
 }
-function betragInput()
-{
-    if( inputBetrag.value=="" || /^[-+]?[0-9]+$/.test(inputBetrag.value)==false)
-    {
-        inputBetrag.style.border="1px solid red";
+function betragInput() {
+    if (inputBetrag.value == "" || /^[-+]?[0-9]+$/.test(inputBetrag.value) == false) {
+        inputBetrag.style.border = "1px solid red";
     }
-    else
-    {
-        inputBetrag.style.border="1px solid green"
+    else {
+        inputBetrag.style.border = "1px solid green"
     }
 }
