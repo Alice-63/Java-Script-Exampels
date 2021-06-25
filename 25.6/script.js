@@ -87,3 +87,14 @@ function bInput()
         inputBesch.style.border="1px solid green"
     }
 }
+function betragInput()
+{
+    if( inputBetrag.value=="" && /^[-+]?[0-9]+$/.test(inputBetrag.value)==false)
+    {
+        inputBetrag.style.border="1px solid red";
+    }
+    else
+    {
+        inputBetrag.style.border="1px solid green"
+    }
+}
