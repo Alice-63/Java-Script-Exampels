@@ -75,3 +75,15 @@ function clear()
     inputBesch.style.border="none";
     inputBetrag.style.border="none";
 }
+
+function bInput()
+{
+    if( inputBesch.value=="")
+    {
+        inputBesch.style.border="1px solid red";
+    }
+    else
+    {
+        inputBesch.style.border="1px solid green"
+    }
+}
