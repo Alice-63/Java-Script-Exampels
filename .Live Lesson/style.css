@@ -6,30 +6,9 @@ body{
     color: white;
     font-family: "Segoe UI";
 }
-h1{
-    margin: 0 0 20px 0;
-}
-.container
-{
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    margin: 40px auto 0 auto;
-    background-color: #5645c7;
-    text-align: center;
-    padding: 20px 25px;
-}
-.zeile
-{
-    display: flex;
 
 
-}
-.zeile>*
-{
-    flex-grow: 1;
-}
-.zeile>input{
+input{
     padding: 5px 8px;
     margin-right: 10px;
     border: none;
@@ -49,24 +28,3 @@ button
     margin: 0 0 0 10px;
 }
 
-.zeile>button:hover{
-    background-color: #a72222;
-}
-#liste{
-    margin-top: 20px;
-}
-#liste>div{
-    padding: 6px 0;
-    display: flex;
-    justify-content: space-around;
-}
-#liste i:hover
-{
-    cursor: pointer;
-}
-
-.box
-{
-    display: flex;
-    margin: 10px;
-}
