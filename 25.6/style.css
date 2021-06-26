@@ -68,6 +68,7 @@ input
     background-color: var(--light);
     height: 30px;
     color: var(--textlight);
+    padding-left: 15px;
 }
 button
 {
