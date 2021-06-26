@@ -1,6 +1,9 @@
 var inputBesch = document.getElementById("b_input");
 var inputBetrag = document.getElementById("betragInput");
 var liste = document.getElementById("liste");
+var gider=document.getElementById("gider");
+var gelir=document.getElementById("gelir");
+var genelTop=document.getElementById("geneltoplam");
 
 function add() {
     if (inputCheck() == false) {
@@ -50,12 +53,30 @@ function transactionAdd() {
         spanFirst.innerHTML = "-";
         spanFirst.style.backgroundColor = "var(--minus)";
         spanLast.style.backgroundColor = "var(--minus)";
+    
     }
     divContainer.appendChild(spanFirst);
     divContainer.appendChild(divBesch);
     divContainer.appendChild(spanLast);
 
     liste.appendChild(divContainer);
+
+   if(betragZahl>0)
+   {
+       gelir.innerHTML=parseInt(inputBetrag.value);
+       genelTop.innerHTML=parseInt(inputBetrag.value);
+       gelir.style.backgroundColor="green";
+   }
+  else
+  {
+      var span=document.createElement("span")
+      span.innerHTML=parseInt(inputBetrag.value);
+      gider.appendChild(span);
+      genelTop.innerHTML=parseInt(inputBetrag.value);
+       gider.style.backgroundColor="red";
+  }
+
+
 
 }
 

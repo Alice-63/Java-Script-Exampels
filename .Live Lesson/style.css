@@ -19,12 +19,12 @@ input{
 button
 {
     padding: 5px 8px;
-     border: none;
+    border: none;
     outline: none;
     background-color: orchid;
     color: white;
     cursor: pointer;
     border-radius: 5px;
-    margin: 0 0 0 10px;
+    margin: 10px 0 0 10px;
 }
 
