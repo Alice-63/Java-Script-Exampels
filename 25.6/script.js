@@ -4,6 +4,10 @@ var liste = document.getElementById("liste");
 var gider=document.getElementById("gider");
 var gelir=document.getElementById("gelir");
 var genelTop=document.getElementById("geneltoplam");
+var i=0;
+var i2=0;
+var sonuc=0;
+
 
 function add() {
     if (inputCheck() == false) {
@@ -65,7 +69,8 @@ function transactionAdd() {
     
 
   neu(x)
-
+  sonuc+=betragZahl;
+  genelTop.innerHTML=sonuc;
 
 
 }
@@ -98,29 +103,28 @@ function betragInput() {
 function neu(x)
 {
     
+    
 
     if(x>0)
     {
-       var i;
-        x+=i;
-        var span=document.createElement("span");
-        
+       
+       parseInt(i);
+       i+=x;
+             
 
-        span.innerHTML=i;
-        gelir.appendChild(span);
-        genelTop.innerHTML=i;
+      
+        gelir.innerHTML="Gelir <br> "+i;
+        
         gelir.style.backgroundColor="green";
     }
    else
    {
-    var i;
-    x+=i;
-     var span=document.createElement("span");
-     
-    
-     span.innerHTML=i;
-     gider.appendChild(span);
-     genelTop.innerHTML+=i;
-     gider.style.backgroundColor="red";
+     i2+=x;
+    gider.innerHTML="Gider <br> "+i2;
+   
+    gider.style.backgroundColor="green";
+    gider.style.backgroundColor="red";
    }
+
+  
 }
