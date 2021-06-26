@@ -63,16 +63,18 @@ function transactionAdd() {
 
    if(betragZahl>0)
    {
+    var betragZahl = parseInt(inputBetrag.value);
        gelir.innerHTML=parseInt(inputBetrag.value);
        genelTop.innerHTML=parseInt(inputBetrag.value);
        gelir.style.backgroundColor="green";
    }
   else
   {
-      var span=document.createElement("span")
-      span.innerHTML+=(parseInt(inputBetrag.value));
+    var betragZahl = parseInt(inputBetrag.value);
+      var span=document.createElement("span");
+      parseInt(span.innerHTML+=betragZahl);
       gider.appendChild(span);
-      genelTop.innerHTML=parseInt(inputBetrag.value);
+      genelTop.innerHTML+=betragZahl;
        gider.style.backgroundColor="red";
   }
 
