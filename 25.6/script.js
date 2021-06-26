@@ -70,7 +70,7 @@ function transactionAdd() {
   else
   {
       var span=document.createElement("span")
-      span.innerHTML=parseInt(inputBetrag.value);
+      span.innerHTML+=(parseInt(inputBetrag.value));
       gider.appendChild(span);
       genelTop.innerHTML=parseInt(inputBetrag.value);
        gider.style.backgroundColor="red";
