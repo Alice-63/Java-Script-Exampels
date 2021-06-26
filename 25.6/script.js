@@ -61,22 +61,10 @@ function transactionAdd() {
 
     liste.appendChild(divContainer);
 
-   if(betragZahl>0)
-   {
-    var betragZahl = parseInt(inputBetrag.value);
-       gelir.innerHTML=parseInt(inputBetrag.value);
-       genelTop.innerHTML=parseInt(inputBetrag.value);
-       gelir.style.backgroundColor="green";
-   }
-  else
-  {
-    var betragZahl = parseInt(inputBetrag.value);
-      var span=document.createElement("span");
-      parseInt(span.innerHTML+=betragZahl);
-      gider.appendChild(span);
-      genelTop.innerHTML+=betragZahl;
-       gider.style.backgroundColor="red";
-  }
+  var x=betragZahl;
+    
+
+  neu(x)
 
 
 
@@ -105,4 +93,34 @@ function betragInput() {
     else {
         inputBetrag.style.border = "1px solid green"
     }
+}
+
+function neu(x)
+{
+    
+
+    if(x>0)
+    {
+       var i;
+        x+=i;
+        var span=document.createElement("span");
+        
+
+        span.innerHTML=i;
+        gelir.appendChild(span);
+        genelTop.innerHTML=i;
+        gelir.style.backgroundColor="green";
+    }
+   else
+   {
+    var i;
+    x+=i;
+     var span=document.createElement("span");
+     
+    
+     span.innerHTML=i;
+     gider.appendChild(span);
+     genelTop.innerHTML+=i;
+     gider.style.backgroundColor="red";
+   }
 }
