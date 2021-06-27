@@ -14,7 +14,7 @@
     <div class="inputContainer">
       <h3>Neu Transaktion</h3>
       <input id="b_input" type="text" placeholder="Beschreibung" oninput="bInput()">
-      <select name="" id="">
+      <select name="" id="category">
         <option value="0">Auswählen</option>
         <option value="rechnung">Rechnung</option>
         <option value="gehalt">Gehalt</option>
@@ -26,7 +26,7 @@
        <input id="betragInput" type="text" placeholder="Betrag" oninput="betragInput()">
        <span>€</span>
     </div>
-    <button onclick="add();">Hinzufügen</button>
+    <button id="myBtn" onclick="add();">Hinzufügen</button>
     </div>
     <div class="listeContainer">
       <h3>Neu Transaktion</h3>

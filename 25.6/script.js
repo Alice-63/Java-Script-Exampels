@@ -5,12 +5,14 @@ var ausgabeContainer=document.getElementById("ausgabe");
 var bezugContainer=document.getElementById("bezug");
 var totalContainer=document.getElementById("total");
 var warnung=document.getElementById("warnung");
+var category=document.getElementById("category");
 var bezug=0;
 var ausgabe=0;
 var total=0;
 
 
 function add() {
+    inputBesch.focus();
     if (inputCheck() == false) {
         return
     }
@@ -48,9 +50,11 @@ function transactionAdd() {
     var spanFirst = document.createElement("span");
     var divBesch = document.createElement("div");
     var spanLast = document.createElement("span");
+    var spanLast2=document.createElement("span")
     spanFirst.innerHTML = "+";
     spanLast.innerHTML = inputBetrag.value + " €";
-    divBesch.innerHTML = inputBesch.value;
+    divBesch.innerHTML = inputBesch.value+" - "+category.selectedOptions[0].text;
+    spanLast2.innerHTML=document;
 
     var betragZahl = parseInt(inputBetrag.value);
 
@@ -72,7 +76,7 @@ function transactionAdd() {
   neu(x)
   total+=betragZahl;
   totalContainer.innerHTML="<b> Total </b> <br>"+total;
-  totalContainer.style.backgroundColor="var(--plus)"
+  
 
   if(total>10000)
   {
@@ -86,8 +90,16 @@ function transactionAdd() {
   }
   else
   {
-    warnung.innerHTML=" <br> Actung! <br> Zustand ist schlecht ! "
+    warnung.innerHTML="Actung! <br> Zustand ist schlecht ! "
     warnung.style.backgroundColor="var(--minus)"
+  }
+  if(total>0)
+  {
+    totalContainer.style.backgroundColor="var(--plus)"
+  }
+  else
+  {
+    totalContainer.style.backgroundColor="var(--minus)"
   }
 
 
@@ -146,3 +158,18 @@ function neu(x)
 
   
 }
+
+// Get the input field------ENTER---------
+
+var input = document.getElementById("betragInput");
+
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("myBtn").click();
+  }
+});
