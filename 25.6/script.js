@@ -70,8 +70,8 @@ function transactionAdd() {
 
   neu(x)
   total+=betragZahl;
-  totalContainer.innerHTML="Total <br>"+total;
-  totalContainer.style.backgroundColor="green"
+  totalContainer.innerHTML="<b> Total </b> <br>"+total;
+  totalContainer.style.backgroundColor="var(--plus)"
 
 
 }
@@ -114,17 +114,17 @@ function neu(x)
              
 
       
-        bezugContainer.innerHTML="Bezug <br> "+bezug;
+        bezugContainer.innerHTML="<b> Bezug </b> <br> "+bezug;
         
-        bezugContainer.style.backgroundColor="green";
+        bezugContainer.style.backgroundColor="var(--plus)";
     }
    else
    {
      ausgabe+=x;
-    ausgabeContainer.innerHTML="Ausgabe <br> "+ausgabe;
+    ausgabeContainer.innerHTML="<b> Ausgabe</b> <br> "+ausgabe;
    
-    ausgabeContainer.style.backgroundColor="green";
-    ausgabeContainer.style.backgroundColor="red";
+    ausgabeContainer.style.backgroundColor="var(--minus)";
+    
    }
 
   
