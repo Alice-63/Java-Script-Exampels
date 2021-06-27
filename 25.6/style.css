@@ -160,3 +160,8 @@ padding: 6px 10px;
     margin-bottom: 10px;
     background-color: var(--plus);
 }
+#warnung
+{
+ width: 300px;
+ text-align: center;
+}

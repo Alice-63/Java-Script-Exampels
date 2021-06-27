@@ -4,6 +4,7 @@ var liste = document.getElementById("liste");
 var ausgabeContainer=document.getElementById("ausgabe");
 var bezugContainer=document.getElementById("bezug");
 var totalContainer=document.getElementById("total");
+var warnung=document.getElementById("warnung");
 var bezug=0;
 var ausgabe=0;
 var total=0;
@@ -72,6 +73,22 @@ function transactionAdd() {
   total+=betragZahl;
   totalContainer.innerHTML="<b> Total </b> <br>"+total;
   totalContainer.style.backgroundColor="var(--plus)"
+
+  if(total>10000)
+  {
+     warnung.innerHTML="Zustand ist  <br> gut!"
+     warnung.style.backgroundColor="var(--plus)"
+  }
+  else if(total>2000)
+  {
+    warnung.innerHTML="Man muss  <br> aufpassen!"
+    warnung.style.backgroundColor="darkorange"
+  }
+  else
+  {
+    warnung.innerHTML=" <br> Actung! <br> Zustand ist schlecht ! "
+    warnung.style.backgroundColor="var(--minus)"
+  }
 
 
 }
