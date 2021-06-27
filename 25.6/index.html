@@ -14,6 +14,14 @@
     <div class="inputContainer">
       <h3>Neu Transaktion</h3>
       <input id="b_input" type="text" placeholder="Beschreibung" oninput="bInput()">
+      <select name="" id="">
+        <option value="0">Auswählen</option>
+        <option value="rechnung">Rechnung</option>
+        <option value="gehalt">Gehalt</option>
+        <option value="versicherung">Versicherung</option>
+        <option value="kinder">Kinder Ausgabe</option>
+        <option value=""></option>
+      </select>
      <div> 
        <input id="betragInput" type="text" placeholder="Betrag" oninput="betragInput()">
        <span>€</span>
@@ -27,17 +35,19 @@
       </div>
     </div>
 
-    <div class="sonuc" style="display: flex;">
-      <div id="gider" style="margin-right: 35px;">
-        <h3>Gider</h3>
+    <div class="ergebnis" style="display: flex;">
+      <div id="ausgabe" style="margin-right: 35px;">
+        <h3>Ausgabe</h3>
       </div>
-      <div id="gelir">
-        <h3>Gelir</h3>
+      <div id="bezug">
+        <h3>Bezug</h3>
       </div>
     </div>
-    <div id="geneltoplam">
-      <h3>Genel Toplam</h3>
+    <div id="total">
+      <h3>Total</h3>
     </div>
+    <br>
+    <div></div>
 
 
 

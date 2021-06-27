@@ -1,12 +1,12 @@
 var inputBesch = document.getElementById("b_input");
 var inputBetrag = document.getElementById("betragInput");
 var liste = document.getElementById("liste");
-var gider=document.getElementById("gider");
-var gelir=document.getElementById("gelir");
-var genelTop=document.getElementById("geneltoplam");
-var i=0;
-var i2=0;
-var sonuc=0;
+var ausgabeContainer=document.getElementById("ausgabe");
+var bezugContainer=document.getElementById("bezug");
+var totalContainer=document.getElementById("total");
+var bezug=0;
+var ausgabe=0;
+var total=0;
 
 
 function add() {
@@ -69,8 +69,9 @@ function transactionAdd() {
     
 
   neu(x)
-  sonuc+=betragZahl;
-  genelTop.innerHTML=sonuc;
+  total+=betragZahl;
+  totalContainer.innerHTML="Total <br>"+total;
+  totalContainer.style.backgroundColor="green"
 
 
 }
@@ -108,22 +109,22 @@ function neu(x)
     if(x>0)
     {
        
-       parseInt(i);
-       i+=x;
+       parseInt(bezug);
+       bezug+=x;
              
 
       
-        gelir.innerHTML="Gelir <br> "+i;
+        bezugContainer.innerHTML="Bezug <br> "+bezug;
         
-        gelir.style.backgroundColor="green";
+        bezugContainer.style.backgroundColor="green";
     }
    else
    {
-     i2+=x;
-    gider.innerHTML="Gider <br> "+i2;
+     ausgabe+=x;
+    ausgabeContainer.innerHTML="Ausgabe <br> "+ausgabe;
    
-    gider.style.backgroundColor="green";
-    gider.style.backgroundColor="red";
+    ausgabeContainer.style.backgroundColor="green";
+    ausgabeContainer.style.backgroundColor="red";
    }
 
   
