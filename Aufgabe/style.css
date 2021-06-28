@@ -23,6 +23,7 @@ input, button
 button
 {
     background-color: darkorange;
+    cursor: pointer;
 }
 .box
 {

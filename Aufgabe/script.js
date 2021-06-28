@@ -8,7 +8,14 @@ function add()
     var span=document.getElementById("span");
    
 
-    span.innerHTML+="<div class='box2'>"+number+" " +input.value+"</div>";
+    span.innerHTML+="<div class='box2'>"+number+".  " +input.value+"</div>";
+   
+    if(input.value=="")
+    {
+        alert("Bitte alle Felder ausfüllen");
+        
+    }
+
     input.value="";
 
 }
