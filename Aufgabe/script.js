@@ -7,15 +7,20 @@ function add()
     input.value;
     var span=document.getElementById("span");
    
-
-    span.innerHTML+="<div class='box2'>"+number+".  " +input.value+"</div>";
-   
-    if(input.value=="")
+    if(input.value != "")
+    { 
+        span.innerHTML+="<div class='box2'>"+number+".  " +input.value+"</div>";
+        input.value="";
+    }
+    
+    else if(input.value=="")
     {
         alert("Bitte alle Felder ausfüllen");
         
     }
+    return
+   
 
-    input.value="";
+   
 
 }
