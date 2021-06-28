@@ -9,6 +9,7 @@ body
    background-image: url(1.png);
    background-size:cover;
    width: 100%;
+   
  
   
  
@@ -23,13 +24,14 @@ body
     opacity: 0.3;
 }
 
-.arrowBox
+.slideBox
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position:absolute ;
     width: 100%;
+    
 }
 h1
 {
