@@ -6,7 +6,6 @@ body
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 1050px;
    background-color: black;
    opacity: 0.8;
    position: absolute;
