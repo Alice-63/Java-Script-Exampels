@@ -7,10 +7,49 @@ body{
 
 }
 
-#box
+nav
 {
+    background-color: #1f1f53;
     display: flex;
-   justify-content: center;
-   align-items: center;
-   padding-top: 150px;
+    align-items: center;
+    overflow: hidden;
+}
+nav a
+{
+    text-decoration: none;
+    color: white;
+    padding: 12px 25px;
+}
+nav a:hover
+{
+    background-color: #31316d ;
+}
+#hamburger
+{
+    color: white;
+    font-size: 1.5em;
+    margin: 15px 25px;
+    display: none;
+}
+
+@media (max-width:600px)
+{
+    nav 
+    {   
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #hamburger
+    {
+        display: block;
+        cursor: pointer;
+        
+    }
+    nav a
+    {
+        display: none;
+        width: 100%;
+        text-align: right;
+    }
 }
