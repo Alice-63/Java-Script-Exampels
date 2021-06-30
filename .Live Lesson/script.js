@@ -1,23 +1,45 @@
 var allA=document.getElementsByTagName("a");
-var a=0;
+var a=false;
 
 function show()
 {
-    a++;
-    if(a==1)
-    {
+    let x="block"
+    if(a)
+    
+        x="none";
+
     for(i=0 ;i < allA.length ; i++)
     {
-        allA[i].style.display="block";
+        allA[i].style.display=x;
     }
-    }
-    if(a==2)
-    {
-        for(i=0 ;i < allA.length ; i++)
-    {
-        allA[i].style.display="none";
-        a=0;
-    }
-
-    }
+    
+    a=!a;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // if(a==2)
+    // {
+    //     for(i=0 ;i < allA.length ; i++)
+    // {
+    //     allA[i].style.display="none";
+    //     a=0;
+    // }
+
+    // }
