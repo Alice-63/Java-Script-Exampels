@@ -1,25 +1,10 @@
-var allA=document.getElementsByTagName("a");
-var nav=document.getElementById("nav");
-var a=false;
 
-function show()
-{
-    
-    if(a)
-    {
-        nav.style.height="54px"
+let val;
 
-    }
-    else
-    {
-        nav.style.height="340px"
-    }
-   
-    
-    a=!a;
-}
+val=5;
 
 
+console.log(val)
 
 
 
