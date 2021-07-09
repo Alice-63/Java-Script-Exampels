@@ -1,33 +1,13 @@
 
-let val;
-
-val=5;
 
 
-console.log(val)
+function Auto(a,b,c)
+{
+    this.name=a;
+    this.nachname=b;
+    this.fullName=c;
+}
 
+var auto1=new Auto("Mercedes","B170",2005)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // if(a==2)
-    // {
-    //     for(i=0 ;i < allA.length ; i++)
-    // {
-    //     allA[i].style.display="none";
-    //     a=0;
-    // }
-
-    // }
+console.log(auto1);
