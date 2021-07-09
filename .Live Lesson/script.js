@@ -8,6 +8,12 @@ function Auto(a,b,c)
     this.fullName=c;
 }
 
-var auto1=new Auto("Mercedes","B170",2005)
 
-auto1;
+const val={
+    name:"ALi",
+    nachname:"Cetindag"
+}
+
+val.full="ALi Cetindag"
+
+console.log(val.full)
