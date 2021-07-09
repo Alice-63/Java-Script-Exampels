@@ -10,4 +10,4 @@ function Auto(a,b,c)
 
 var auto1=new Auto("Mercedes","B170",2005)
 
-console.log(auto1);
+auto1;
