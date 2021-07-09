@@ -14,6 +14,18 @@ const val={
     nachname:"Cetindag"
 }
 
-val.full="ALi Cetindag"
+val.full="ALi Cetindag";
+val.job="Web Etwickler";
+delete val;
 
-console.log(val.full)
+for(let x=0; x<val.length;x++)
+{
+   console.log(x)
+}
+
+function add(a)
+{
+    a.innerHTML="HAllo";
+    a.onclick=function(){a.innerHTML="Klick";a.onclick=function(){add(a)}}
+  
+}
