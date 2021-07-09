@@ -7,57 +7,9 @@ body{
 
 }
 
-nav
+#box
 {
-    background-color: #1f1f53;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    transition: height 1s;
-}
-nav a
-{
-    text-decoration: none;
-    color: white;
-    padding: 12px 25px;
-    
-   
-}
-nav a:hover
-{
-    background-color: #31316d ;
-}
-#hamburger
-{
-    color: white;
-    font-size: 1.5em;
-    margin: 15px 25px;
-    display: none;
-}
-
-@media (max-width:600px)
-{
-    nav 
-    {   
-        flex-direction: column;
-        align-items: flex-end;
-        height: 54px;
-    }
-
-    #hamburger
-    {
-        display: block;
-        cursor: pointer;
-        
-    }
-    nav a
-    {
-        
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        flex-grow: 1;
-        
-    }
+    width: 200px;
+    height: 200px;
+    background-color: red;
 }
