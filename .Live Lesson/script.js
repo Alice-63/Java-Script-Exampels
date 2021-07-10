@@ -1,7 +1,7 @@
 
 
 
-function Person(isim,soyad,yas)
+function Person(isim,soyad,yas,kalem)
 {
     this.name=isim;
     this.surname=soyad;
@@ -9,7 +9,9 @@ function Person(isim,soyad,yas)
     this.fullName=function(){return this.name+" "+this.surname;}
 }
 
+Person.toString.tamIsim="kalem"
+
 const person1=new Person("Ali","Cetin",37);
 
 
-console.log(person1.fullName())
+console.log(Person)
