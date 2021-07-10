@@ -1,10 +1,15 @@
 
 
 
-function Person()
+function Person(isim,soyad,yas)
 {
-    name:"ALi";
-    surname:"Cetin";
-    fullName: function(){this.name+" "+this.surname}
+    this.name=isim;
+    this.surname=soyad;
+    this.age=yas;
+    this.fullName=function(){return this.name+" "+this.surname;}
 }
-console.log(Person)
+
+const person1=new Person("Ali","Cetin",37);
+
+
+console.log(person1.fullName())
