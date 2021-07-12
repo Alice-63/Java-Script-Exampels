@@ -1,4 +1,4 @@
-
+var box=document.getElementById("box");
 
 
 function Person(isim,soyad,yas,kalem)
@@ -15,5 +15,11 @@ const person1=new Person("Ali","Cetin",37);
 
 
 console.log(person1);
-console.log(person1.valueOf(person1))
+person1.akk=function()
+{
+    return this.name+" "+this.surname+" "+this.age;
+}
+console.log(person1);
+
+box.innerHTML=person1.akk();
 
