@@ -14,3 +14,6 @@ Person.toString.tamIsim="kalem"
 const person1=new Person("Ali","Cetin",37);
 
 
+console.log(person1);
+console.log(person1.valueOf(person1))
+
