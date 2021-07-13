@@ -14,12 +14,12 @@ Person.toString.tamIsim="kalem"
 const person1=new Person("Ali","Cetin",37);
 
 
-console.log(person1);
+
 person1.akk=function()
 {
     return this.name+" "+this.surname+" "+this.age;
 }
-console.log(person1);
+let{name,surname,age,fullName}=person1;
+box.innerHTML=name+" "+surname+" "+age+" "+fullName;
 
-box.innerHTML=person1.akk();
-
+console.log(name);
