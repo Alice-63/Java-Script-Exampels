@@ -20,6 +20,6 @@ person1.akk=function()
     return this.name+" "+this.surname+" "+this.age;
 }
 let{name,surname,age,fullName}=person1;
-box.innerHTML=name+" "+surname+" "+age+" "+fullName;
+box.innerHTML=name+" "+surname+" "+age+" "+person1.fullName();
 
 console.log(name);
