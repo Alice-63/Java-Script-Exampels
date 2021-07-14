@@ -1,25 +1,14 @@
 var box=document.getElementById("box");
 
 
-function Person(isim,soyad,yas,kalem)
+const person=
 {
-    this.name=isim;
-    this.surname=soyad;
-    this.age=yas;
-    this.fullName=function(){return this.name+" "+this.surname;}
+    name:"Ali",
+    surname:"Cetindag",
+    age:37
 }
 
-Person.toString.tamIsim="kalem"
-
-const person1=new Person("Ali","Cetin",37);
-
-
-
-person1.akk=function()
+for(x in person)
 {
-    return this.name+" "+this.surname+" "+this.age;
+    box.innerHTML+=x;
 }
-let{name,surname,age,fullName}=person1;
-box.innerHTML=name+" "+surname+" "+age+" "+person1.fullName();
-
-console.log(name);
