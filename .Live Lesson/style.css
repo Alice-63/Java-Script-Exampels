@@ -3,13 +3,14 @@ body{
     height: 100vh;
     margin: 0;  
     font-family: "Segoe UI";
+    display: flex;
     
 
 }
 
-#box
+.box
 {
     width: 200px;
     height: 200px;
-    background-color: red;
+    margin: 15px;
 }
