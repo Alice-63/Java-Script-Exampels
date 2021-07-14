@@ -1,14 +1,33 @@
 var box=document.getElementById("box");
+var inpName=document.getElementById("input1").value;
+var inpSurname=document.getElementById("input2").value;
+var inpAge=document.getElementById("input3").value;
 
 
-const person=
+function Person(name,surname,age)
 {
-    name:"Ali",
-    surname:"Cetindag",
-    age:37
+    this.Name=name;
+    this.Surname=surname;
+    this.Age=age
 }
 
-for(x in person)
+function add2()
+
 {
-    box.innerHTML+=x;
+
+    var box=document.getElementById("box");
+    var inpName=document.getElementById("input1").value;
+    var inpSurname=document.getElementById("input2").value;
+    var inpAge=document.getElementById("input3").value;
+
+const person1=new Person(inpName,inpSurname,inpAge)
+
+for(x in person1)
+{
+
+    box.innerHTML+=x+" : "+person1[x]+"<br>"
+
 }
+
+}
+
