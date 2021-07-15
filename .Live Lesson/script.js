@@ -1,16 +1,15 @@
 
-$(function(){
-
-
-
-
-$("button").click()
+$(function()
 {
-    $(".box").hide();
-    $("#box").hide();
 
-};
+    $("button").click(function () { 
+        const box=$("#box");
 
+        const div=document.createElement("div");
+        div.innerHTML=$("input").val();
+        box.before(div);
+        $("button:last-child").remove();
+    });
 
 
 
