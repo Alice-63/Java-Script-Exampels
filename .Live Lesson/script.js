@@ -1,10 +1,3 @@
-var box=document.getElementById("box");
-
-
-
-
-
-
 
 
 function kardeslereYaziYaz(e)
@@ -12,14 +5,20 @@ function kardeslereYaziYaz(e)
     let onceki=e.previousElementSibling;
     let sonraki=e.nextElementSibling;
 
-    while(onceki && sonraki)
+    while(onceki)
     {
         onceki.innerHTML="Merhaba"
         onceki=onceki.previousElementSibling;
+        
+    }
+
+    while(sonraki)
+
+    { 
         sonraki.innerHTML="Hallo"
         sonraki=sonraki.nextElementSibling;
-
     }
+
 }
 
 kardeslereYaziYaz(document.getElementById("test"))
@@ -27,7 +26,7 @@ kardeslereYaziYaz(document.getElementById("test"))
 
 // $(document).ready(function () {
     
-// $("#test").prevAll().append("Merhaba");
+// $("#test").prevAll().text("Merhaba");
 // $("#test").nextAll().text("Hallo")
 
 // });
