@@ -4,21 +4,19 @@ body{
     margin: 0;  
     font-family: "Segoe UI";
     display: flex;
-    
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
 }
 
-.box
+.container>div
 {
-    width: 200px;
-    height: 200px;
-    margin: 15px;
-    background-color: blueviolet;
-}
-#box
-{
-    width: 200px;
-    height: 200px;
-    margin: 15px;
+    margin-top: 800px;
+    margin-bottom: 800px;
     background-color: red;
+    color: white;
+    padding: 20px 50px;
+    font-weight: bold;
 }
+
