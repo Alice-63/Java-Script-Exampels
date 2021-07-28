@@ -2,12 +2,18 @@
 
 $(document).ready(function(){
 
-    $("#control"). change(function(){
-        let val=$(this).val();
-        $("#box").append(val)
-        $(this).val(" ")
+ 
+    $("#show").click(function(){
+        $("p").show("slow")
     })
-
+    $("#hide").click(function(){
+        $("p").hide("fast")
+    })
+    $("#toggle").click(function(){
+        $("p").toggle(1000,function(){
+            alert("Sie haben geschafft")
+        })
+    })
 
 
 })
