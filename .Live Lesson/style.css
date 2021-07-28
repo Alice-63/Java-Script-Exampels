@@ -20,3 +20,9 @@ body{
     font-weight: bold;
 }
 
+p{
+    width: 100px;
+    height: 100px;
+    display: block;
+    background-color: red;
+}
