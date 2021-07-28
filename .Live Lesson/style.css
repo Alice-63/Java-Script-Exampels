@@ -3,26 +3,18 @@ body{
     height: 100vh;
     margin: 0;  
     font-family: "Segoe UI";
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+ 
 
 }
 
-.container>div
-{
-    margin-top: 800px;
-    margin-bottom: 800px;
-    background-color: red;
-    color: white;
-    padding: 20px 50px;
-    font-weight: bold;
-}
 
-p{
-    width: 100px;
-    height: 100px;
-    display: block;
+#box1{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    
     background-color: red;
+    
 }
