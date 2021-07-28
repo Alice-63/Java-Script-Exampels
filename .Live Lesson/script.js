@@ -4,13 +4,13 @@ $(document).ready(function(){
 
  
     $("#show").click(function(){
-        $("p").fadeIn()
+        $("p").slideDown(1000)
     })
     $("#hide").click(function(){
-        $("p").fadeOut()
+        $("p").slideUp(1000)
     })
     $("#toggle").click(function(){
-        $("p").fadeToggle()
+        $("p").slideToggle(1000)
     })
 
 
