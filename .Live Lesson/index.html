@@ -23,9 +23,19 @@
 
 <div id="app">
   <h1>{{ title }}</h1>
-  <button>{{ button }}</button>
+  <button class="btn btn-primary">{{ button }}</button>
+  <p v-text="paragraph"></p>
+  <a :href="link" v-bind:data-id="id">Google</a>
+  <p v-html="details"></p>
 </div>
+<br><br>
+----------
 
+<div id="app2">
+  <input type="text" @keypress="tik($event)" id="btn">
+  <button @click="tikla();">Tikla</button>
+  <p>{{sayi}}</p>
+</div>
 
 
 
