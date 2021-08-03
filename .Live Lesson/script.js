@@ -1,20 +1,11 @@
 
 
-$(document).ready(function(){
+let x=3;
 
- 
+function test(x)
+{
+    x*=x;
+}
 
-
-})
-
-var box=document.getElementById("box1");
-
-box.innerHTML=box.innerHTML.replace("ali cetindag","ahmet zambak")
-
-
-const val=0;
-
-console.log(val)
+console.log(x)
    
-val=15;
-console.log(val)
