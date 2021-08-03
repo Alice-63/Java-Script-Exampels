@@ -1,11 +1,10 @@
+const span=document.getElementById("span");
+const textarea=document.getElementById("text");
 
 
-let x=3;
-
-function test(x)
+function update()
 {
-    x*=x;
+    let number=textarea.value.length;
+    span.innerHTML=number+ " /100"
 }
 
-console.log(x)
-   
