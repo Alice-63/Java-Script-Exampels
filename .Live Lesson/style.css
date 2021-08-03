@@ -3,18 +3,16 @@ body{
     height: 100vh;
     margin: 0;  
     font-family: "Segoe UI";
+    display: flex;
+    justify-content: center;
+    align-items: center;
  
 
 }
 
 
-#box1{
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 20px;
-    left: 100px;
-    
-    background-color: red;
-    
+#box
+{
+    display: flex;
+    flex-direction: column;
 }
