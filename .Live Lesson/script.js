@@ -5,12 +5,13 @@ const textarea=document.getElementById("text");
 function update()
 {
     let number=textarea.value.length;
-    span.innerHTML=number+ " /100"
+    span.innerHTML="<b>"+number+ " /100 </b>"
 
 
     if(number==100)
     {
-        span.style.color="red"
+        span.style.color="red";
+        textarea.setAttribute("disabled","true")
     }
     else if(number>=90)
     {
