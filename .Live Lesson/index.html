@@ -21,13 +21,14 @@
  
   
 <div id="app">
- <input type="text">
+ <input type="text" id="inp1">
  <span id="spn">{{character}}</span>
- <input type="text">
+ <input type="text" id="inp2">
  <span id="result"></span>
  <div id="buttons">
-   <button>Plus</button>
-   <button>Minus</button>
+   <button @click="cal('+');">Plus</button>
+   <button @click="cal('-');">Minus</button>
+   <button onclick="calculate();">Calculate</button>
  </div>
 </div>
 
