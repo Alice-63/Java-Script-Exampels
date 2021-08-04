@@ -11,7 +11,15 @@ function update()
     if(number==100)
     {
         span.style.color="red";
-        textarea.setAttribute("disabled","true")
+        textarea.setAttribute("disabled","true");
+        let div=document.createElement("div");
+        let btn=document.createElement("button");
+        btn.click=function(){
+            textarea.setAttribute("disabled","false");
+            textarea.value="";
+        }
+        div.appendChild(btn);
+        span.appendChild(div);
     }
     else if(number>=90)
     {
