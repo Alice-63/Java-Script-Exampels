@@ -14,9 +14,9 @@ function update()
         textarea.setAttribute("disabled","true");
         let div=document.createElement("div");
         let btn=document.createElement("button");
-        btn.click=function(){
-            textarea.setAttribute("disabled","false");
-            textarea.value="";
+        btn.innerHTML="Senden"
+        btn.onclick=function(){
+           add()
         }
         div.appendChild(btn);
         span.appendChild(div);
@@ -35,3 +35,8 @@ function update()
     }
 }
 
+function add(){
+    $('#text').prop('disabled', false);
+    textarea.value="";
+  
+}
