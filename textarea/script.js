@@ -14,7 +14,8 @@ function update()
         textarea.setAttribute("disabled","true");
         let div=document.createElement("div");
         let btn=document.createElement("button");
-        btn.innerHTML="Senden"
+        btn.innerHTML="Senden";
+        
         btn.onclick=function(){
            add()
         }
