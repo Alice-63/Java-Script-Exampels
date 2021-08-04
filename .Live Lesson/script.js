@@ -7,18 +7,15 @@ var app=new Vue({
 
     el:"#app",
     data:{
-        text:"Ali Cetindag"
+        text:"Ali"
     },
     methods:
     {
-        add(){
-            app.text="Ali Veli"
+        add(e){
+            app.text=e
         },
-        min(){
-            app.text="Ahmet Zambak"
-        }
+        
     }
-
 
 })
 
