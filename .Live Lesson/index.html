@@ -21,14 +21,18 @@
  
   
 <div id="app">
- <input type="text" v-model="sayi">
- <p>{{ sayi>= 18 ? "Resittir" : "Degildir..." }}</p>
- <p>{{sayiWriter()}}</p>
- <p>{{sayiWriterCom}}</p>
- <p>{{number}}</p>
- <button @click="number++">Number</button>
- <button @click="art();">Art</button>
- <button @click="azt();">Azt</button>
+<select name="" id="" v-model="text" multiple>
+  <option disabled >Secim</option>
+  <option value="ali" >Ali</option>
+  <option value="Veli" selected>Veli</option>
+  <option value="Deli">Deli</option>
+  <option value="">selim</option>
+</select>
+<hr>
+<br>
+<p>Text: {{text}}</p>
+
+
 </div>
 
 
