@@ -21,16 +21,11 @@
  
   
 <div id="app">
- <input type="text" id="inp1">
- <span id="spn">{{character}}</span>
- <input type="text" id="inp2">
- <span id="result"></span>
- <div id="buttons">
-   <button @click="cal('+');">Plus</button>
-   <button @click="cal('-');">Minus</button>
-   <button onclick="calculate();">Calculate</button>
-   <div id="warning"></div>
- </div>
+ <input type="text" v-model="sayi">
+ <p>{{ sayi>= 18 ? "Resittir" : "Degildir..." }}</p>
+ <p>{{sayiWriter()}}</p>
+ <button @click="art();">Art</button>
+ <button @click="azt();">Azt</button>
 </div>
 
 
