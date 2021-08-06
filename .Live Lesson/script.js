@@ -1,16 +1,12 @@
 
 
 
-const app=new Vue
-({
+const app= new Vue({
     el:"#app",
-    data:{
-        text:""
-    },
-    
-   
-    
-
+    data:
+    {
+        className:"blue"
+    }
 })
 
 
