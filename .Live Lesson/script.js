@@ -14,14 +14,13 @@ const app=new Vue({
             Soyadi:"Cetindag",
             Yas:"37",
         },
-        methods:{
-            key(){
-                console.log("Hallo")
-            }
-        }
-    }
+        
+    
     
 })
 
+function key(){
+    console.log("hallo")
+}
 
 
