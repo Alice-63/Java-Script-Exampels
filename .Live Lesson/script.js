@@ -13,6 +13,11 @@ const app=new Vue({
             Adi:"Ali",
             Soyadi:"Cetindag",
             Yas:"37",
+        },
+        methods:{
+            key(){
+                console.log("Hallo")
+            }
         }
     }
     
