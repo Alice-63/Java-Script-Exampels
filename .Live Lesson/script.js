@@ -5,11 +5,11 @@ const app= new Vue({
     el:"#app",
     data:
     {
-        list:["Ali","Ahmet","Mehmet"],
+        list:[1,2,3,4,5],
         person:{
             name:"Ali",
-            lastname:"Cetindag",
-            mail:"Ali@cetindag.com"
+            surname:"Cetindag",
+            age:37
         }
     },
     
