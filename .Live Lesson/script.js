@@ -5,7 +5,7 @@ const app= new Vue({
     el:"#app",
     data:
     {
-        list:["Elma","Armut","Kiraz"],
+        list:["Ali","Ahmet","Mehmet"],
         person:{
             name:"Ali",
             lastname:"Cetindag",
