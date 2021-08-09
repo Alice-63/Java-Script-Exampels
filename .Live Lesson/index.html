@@ -21,7 +21,7 @@
 
 <div id="app">
 <input type="text" v-model="text">
-<div>{{text}}</div>
+<div v-bind:style="renk">{{text}}</div>
 <div>
   <ul>
     <li v-for="x in list">{{x}}</li>

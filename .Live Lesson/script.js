@@ -7,6 +7,7 @@ const app=new Vue({
     data:
     {
         text:"",
+        renk:"color:red",
         list:[1,2,3],
         array:{
             Adi:"Ali",
