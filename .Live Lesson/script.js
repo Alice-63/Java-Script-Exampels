@@ -6,7 +6,7 @@ const app=new Vue({
     el:"#app",
     data:
     {
-        text:"",
+        text:[],
         renk:"color:red",
         box:"background-color: red",
         list:[1,2,3],
