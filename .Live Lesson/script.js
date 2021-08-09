@@ -16,14 +16,12 @@ const app=new Vue({
         },
     methods:
         {
-            key
+            
         }
     
     
 })
 
-function key(){
-    console.log("hallo")
-}
+setTimeout(function(){app.array.Adi="Ahmet"},2000)
 
 
