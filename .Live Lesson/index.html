@@ -24,7 +24,7 @@
 <div v-bind:style="renk">{{text}}</div>
 <div>
   <ul>
-    <li v-for="x in list">{{x}}</li>
+    <li v-for="x in list" v-bind:class="box">{{x}}</li>
   </ul>
 </div>
 <div v-for="(a,b) in array">
