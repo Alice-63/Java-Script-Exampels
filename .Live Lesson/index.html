@@ -20,8 +20,8 @@
 <body id="body" class=" bg-dark text-white">
 
 <div id="app">
-<input type="checkbox" v-model="text" value="ali">
-<input type="checkbox" v-model="text" value="veli">
+<label for="ali"> <input type="checkbox" v-model="text" value="ali"></label> Ali
+<input type="checkbox" v-model="text" value="veli">Veli
 <div v-bind:style="renk">Hosgeldini Sayin {{text}}</div>
 <div>
   <ul>
