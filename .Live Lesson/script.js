@@ -8,7 +8,7 @@ const app=new Vue({
     {
         text:"",
         renk:"color:red",
-        box:"width:100px; height:100px; background-color:red",
+        box:"background-color: red",
         list:[1,2,3],
         array:{
             Adi:"Ali",
