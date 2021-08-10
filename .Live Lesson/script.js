@@ -1,8 +1,8 @@
 
 
 
-const app=new Vue({
-
+const app=new Vue
+({
     el:"#app",
     data:
     {
@@ -26,17 +26,8 @@ const app=new Vue({
                 price:150,
                 count:5,
             }
-        ]
-            
-        
-        
-    methods:
-        {
-            
-        }
-    
-    
+      ]
+    }
+
+
 })
-
-
-
