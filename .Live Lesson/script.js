@@ -14,7 +14,7 @@ const app=new Vue
             {
                 titel:"Apple",
                 price:100,
-                count:10,
+                count:0,
             },
             {
                 titel:"Microsoft",

@@ -25,7 +25,7 @@
 <div v-bind:style="renk">Hosgeldini Sayin {{text}}</div>
 <div>
   <ul>
-    <li v-for="x in product" v-bind:class="box">{{x.titel}}-{{x.count}}</li>
+    <li v-for="x in product" v-if="x.count>0" v-bind:class="box">{{x.titel}}-{{x.count}}</li>
   </ul>
 </div>
 <div v-for="">
