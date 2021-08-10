@@ -11,6 +11,7 @@ const app=new Vue
         renk:"color:red",
         box:"background-color: red",
         list:[1,2,3],
+        
         product:[
             {
                 titel:"Apple",
@@ -26,9 +27,16 @@ const app=new Vue
                 titel:"Linux",
                 price:150,
                 count:5,
+            },
+          
+             ]
+        },
+        methods:
+        {
+            minus(x){
+                x.count=x.count-this.sellCount
             }
-      ]
-    }
+        }
 
 
 })

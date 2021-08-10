@@ -28,9 +28,9 @@
   <ul>
    <li 
     v-for="x in product" 
-    v-if="x.count>0" 
+   
     v-bind:class="box">{{x.titel}}-{{x.count}} 
-    <button @click="x.count=x.count-sellCount">Satildi</button>
+    <button @click="minus(x)" :disabled="x.count==0">Satildi</button>
   </li>
     
   </ul>
