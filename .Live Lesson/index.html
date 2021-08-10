@@ -21,12 +21,13 @@
 
 <div id="app">
 
-<div class="zeile" v-for=" x in zeile">
+<div class="zeile" v-for=" (x,i) in zeile">
+  {{i+1}}.
   <input type="text" placeholder="Vorname">
   <input type="text" placeholder="Nachname">
   <button>Löschen</button>
 </div>
-<button @click="hinzufeugen">Hinzufügen</button>
+<button @click="hinzufeugen" class="btn btn-primary">Hinzufügen</button>
 </div>
 
 
