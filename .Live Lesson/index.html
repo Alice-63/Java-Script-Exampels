@@ -23,8 +23,8 @@
 
 <div class="zeile" v-for=" (x,i) in zeile">
   {{i+1}}.
-  <input type="text" placeholder="Vorname">
-  <input type="text" placeholder="Nachname">
+  <input type="text" placeholder="Vorname" v-model="x.vorname">
+  <input type="text" placeholder="Nachname" v-model="x.nachname">
   <button @click="loeschen(i)">Löschen</button>
 </div>
 <button @click="hinzufeugen" class="btn btn-primary">Hinzufügen</button>
