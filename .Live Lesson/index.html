@@ -20,24 +20,15 @@
 <body id="body" class=" bg-dark text-white">
 
 <div id="app">
-<label for=""> <input type="checkbox" v-model="text" value="ali">Ali</label>
-<input type="checkbox" v-model="text" value="veli">Veli
-<div v-bind:style="renk">Hosgeldini Sayin {{text}}</div>
-<div>
-  <input type="text" v-model="sellCount">
+
   <ul>
-   <li 
-    v-for="x in product" 
-   
-    v-bind:class="box">{{x.titel}}-{{x.count}} 
-    <button @click="minus(x)" :disabled="x.count==0">Satildi</button>
-  </li>
-    
+    <li v-for="x in list">
+      {{x}}
+    </li>
   </ul>
-</div>
-<div v-for="">
-  
-</div>
+  <ul>
+    <li >{{zeynep.name}}:{{zeynep.surname}}:{{zeynep.age}}</li>
+  </ul>
 </div>
 
 

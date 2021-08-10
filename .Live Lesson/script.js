@@ -4,39 +4,15 @@
 const app=new Vue
 ({
     el:"#app",
-    data:
-    {
-        sellCount:0,
-        text:[],
-        renk:"color:red",
-        box:"background-color: red",
-        list:[1,2,3],
-        
-        product:[
-            {
-                titel:"Apple",
-                price:100,
-                count:0,
-            },
-            {
-                titel:"Microsoft",
-                price:200,
-                count:30,
-            }
-            ,{
-                titel:"Linux",
-                price:150,
-                count:5,
-            },
-          
-             ]
-        },
-        methods:
-        {
-            minus(x){
-                x.count=x.count-this.sellCount
-            }
-        }
-
+  data:
+  {
+      list:["Ali","Cetindag",37],
+      zeynep:
+      {
+          name:"Zeynep",
+          surname:"Cetindag",
+          age:8,
+      }
+  }
 
 })
