@@ -24,8 +24,14 @@
 <input type="checkbox" v-model="text" value="veli">Veli
 <div v-bind:style="renk">Hosgeldini Sayin {{text}}</div>
 <div>
+  <input type="text" v-model="sellCount">
   <ul>
-    <li v-for="x in product" v-if="x.count>0" v-bind:class="box">{{x.titel}}-{{x.count}} <button @click="x.count--">Satildi</button></li>
+   <li 
+    v-for="x in product" 
+    v-if="x.count>0" 
+    v-bind:class="box">{{x.titel}}-{{x.count}} 
+    <button @click="x.count=x.count-sellCount">Satildi</button>
+  </li>
     
   </ul>
 </div>

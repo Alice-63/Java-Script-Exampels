@@ -6,6 +6,7 @@ const app=new Vue
     el:"#app",
     data:
     {
+        sellCount:0,
         text:[],
         renk:"color:red",
         box:"background-color: red",
