@@ -14,6 +14,9 @@ const app=new Vue
   methods:{
     hinzufeugen(){
         this.zeile.push({vorname:"",nachname:""})
+    },
+    loeschen(index){
+        this.zeile.splice(index,1)
     }
   }
 
