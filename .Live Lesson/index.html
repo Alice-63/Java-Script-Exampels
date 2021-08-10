@@ -21,11 +21,12 @@
 
 <div id="app">
 
-<div class="zeile">
+<div class="zeile" v-for=" x in zeile">
   <input type="text" placeholder="Vorname">
   <input type="text" placeholder="Nachname">
   <button>Löschen</button>
 </div>
+<button @click="hinzufeugen">Hinzufügen</button>
 </div>
 
 
