@@ -11,12 +11,15 @@ const produktnamen =
     "Kühltruhe",
     "Hemd",
     "Kopftuch",
+    "Bosch Kühlschrank",
+    "Kühltruhe"
 ]
 
 function tip(el)
 {
+    let list=[];
     let s = el.value; // Kühl
-   
+   produktnamen.includes(s).list.push()
 }
 
 
@@ -29,10 +32,18 @@ let x=0
     }
    success()
 
-}).then(function(){
+
+}).finally(function(){
+    console.log("Finnaly")
+    .then(function(){
     console.log("weiter!!")
-},function(){
-    console.log("Achtung!!")
+}
+)
+}).then(function(){
+    console.log("2.Then")
+
+}).catch(function(){
+    console.log("catch")
 })
 
 console.log("start")
