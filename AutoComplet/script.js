@@ -14,13 +14,20 @@ const produktnamen =
     "Bosch Kühlschrank",
     "Kühltruhe"
 ]
+const results=document.getElementById("results")
+
 
 function tip(el)
 {
+    results.innerHTML="";
  
     let s=el.value.toLowerCase();
     if(s=="" || s.length<2)
-    return
+    {
+      
+        results.style.display="none"
+        return
+    }
 
 
     let treffer=[];
@@ -28,8 +35,20 @@ function tip(el)
     {
         if(p.toLowerCase().includes(s))
         {
-            treffer.push(p)
+            treffer.push(p);
+            let div=document.createElement("div");
+            div.innerHTML=p;
+            results.appendChild(div)
         }
+    }
+
+    if(treffer.length==0)
+    {
+        results.style.display=""
+    }
+    else
+    {
+        results.style.display="block"
     }
 console.log(treffer)
 
