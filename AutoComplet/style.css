@@ -39,6 +39,12 @@ header
     display: flex;
     margin: 0 50px;
 }
+
+.results
+{
+    background-color: wheat;
+    padding: 5px;
+}
 .topContainer .search .search-icon
 {
     padding: 12px;
