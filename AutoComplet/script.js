@@ -17,35 +17,23 @@ const produktnamen =
 
 function tip(el)
 {
-    let list=[];
-    let s = el.value; // Kühl
-   produktnamen.includes(s).list.push()
-}
+ 
+    let s=el.value.toLowerCase();
+    if(s=="" || s.length<2)
+    return
 
 
-
-new Promise(function(success,error){
-let x=0
-    if(x==0)
+    let treffer=[];
+    for(p of produktnamen)
     {
-        
+        if(p.toLowerCase().includes(s))
+        {
+            treffer.push(p)
+        }
     }
-   success()
+console.log(treffer)
 
-
-}).finally(function(){
-    console.log("Finnaly")
-    .then(function(){
-    console.log("weiter!!")
 }
-)
-}).then(function(){
-    console.log("2.Then")
 
-}).catch(function(){
-    console.log("catch")
-})
 
-console.log("start")
 
-console.log("Finish")
