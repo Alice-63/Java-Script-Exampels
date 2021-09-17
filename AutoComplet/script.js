@@ -20,7 +20,6 @@ function tip(el)
 }
 
 
-console.log("start")
 
 new Promise(function(success,error){
 let x=0
@@ -35,4 +34,7 @@ let x=0
 },function(){
     console.log("Achtung!!")
 })
+
+console.log("start")
+
 console.log("Finish")
