@@ -35,9 +35,15 @@ function tip(el)
     {
         if(p.toLowerCase().includes(s))
         {
+            let input=document.getElementById("input")
             treffer.push(p);
             let div=document.createElement("div");
             div.innerHTML=p;
+            div.onclick=function(){
+                input.value=div.innerHTML;
+                results.style.display=""
+
+            }
             results.appendChild(div)
         }
     }
@@ -50,7 +56,7 @@ function tip(el)
     {
         results.style.display="block"
     }
-console.log(treffer)
+
 
 }
 
