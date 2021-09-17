@@ -54,6 +54,13 @@ header
 .results>div
 {
     padding: 8px 12px;
+    border-radius: 5px;
+}
+.results>div:hover
+{
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
 }
 .topContainer .search .search-icon
 {
